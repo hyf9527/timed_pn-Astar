@@ -191,5 +191,7 @@ int main()
 	//printf("%f", a);
 	Astar();
 
+	system("pause");
+
 }
 
