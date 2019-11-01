@@ -157,6 +157,7 @@ void Astar()
 				AddNewNode(&ReachableTree, is_new);*/
 			}
 		}
+
 		if (flag == 0)
 		{
 			break;
