@@ -1,0 +1,5 @@
+﻿  Create_a_Node.cpp
+f:\agvs\agvs\agvs\create_a_node.cpp(67): error C2059: 语法错误:“)”
+f:\agvs\agvs\agvs\create_a_node.cpp(68): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+f:\agvs\agvs\agvs\create_a_node.cpp(71): error C2181: 没有匹配 if 的非法 else
+f:\agvs\agvs\agvs\create_a_node.cpp(85): error C2065: “transition”: 未声明的标识符
