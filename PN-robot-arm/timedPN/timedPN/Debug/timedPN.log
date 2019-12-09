@@ -1,0 +1,18 @@
+﻿D:\VS2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(timedPN.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  AddNewNode.cpp
+  back_tree.cpp
+  CreateNode.cpp
+  data_read.cpp
+  Initialize.cpp
+  output.cpp
+e:\pn-robot-arm\timedpn\timedpn\output.cpp(10): warning C4101: “Q”: 未引用的局部变量
+e:\pn-robot-arm\timedpn\timedpn\output.cpp(225): warning C4101: “flag”: 未引用的局部变量
+  new_or_old.cpp
+  Completecrosslinkedlist .cpp
+e:\pn-robot-arm\timedpn\timedpn\completecrosslinkedlist .cpp(58): warning C4101: “k”: 未引用的局部变量
+e:\pn-robot-arm\timedpn\timedpn\completecrosslinkedlist .cpp(58): warning C4101: “i”: 未引用的局部变量
+  timedPN.cpp
+e:\pn-robot-arm\timedpn\timedpn\timedpn.cpp(54): warning C4101: “new_mark_g”: 未引用的局部变量
+  Is_enabled.cpp
+  正在生成代码...
+  timedPN.vcxproj -> E:\PN-robot-arm\timedPN\Debug\timedPN1.exe

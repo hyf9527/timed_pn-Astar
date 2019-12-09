@@ -1,13 +1,13 @@
 # coding: utf-8
-
-import os
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 import tensorflow as tf
 import pandas as pd
+import os
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"    # 按照PCI_BUS_ID顺序从0开始排列GPU设备  tensorflow中gpu的使用
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 
 class_label = {'000011':0, '100001':1, '010001':2, '001010':3, '000110':4, '101000':5,
-       '011000':6, '100100':7, '010100':8}
+       '011000': 6, '100100':7, '010100':8}
 
 def data_process(path):
     data = pd.read_table(path, header=None)
@@ -37,7 +37,7 @@ def predict(X,keep_prob=1):
         # restore saver
         saver = tf.train.import_meta_graph(meta_graph_or_file="H:/TimedPN_A_Predict/nn_boston_model/nn_boston.model-100000.meta")
         model_file = tf.train.latest_checkpoint(checkpoint_dir="H:/TimedPN_A_Predict/nn_boston_model")
-        saver.restore(sess=sess,save_path=model_file)
+        saver.restore(sess=sess, save_path=model_file)
 
         # init graph
         graph = tf.get_default_graph()

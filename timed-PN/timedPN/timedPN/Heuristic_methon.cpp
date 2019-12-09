@@ -11,23 +11,23 @@ void link_delete_num(AstarTree *Tr, AstarNode *Node_min)
 		printf("链表为空\n");
 		return;
 	}
-	while (P->new_m_num != Node_min->new_m_num && P->close_next != NULL)//循环查找要删除的节点
+	while (P->new_m_num != Node_min->new_m_num && P->close_next != NULL)//循环查找要删除的节点   
 	{
 		D = P;
 		P = P->close_next;
 	}
 	if (P->new_m_num == Node_min->new_m_num)//找到了一个节点的num和num相等
 	{
-		if (P == (*Tr).close_head) //找到的节点是头节点
+		if (P == (*Tr).close_head) //找到的节点是头节点  
 		{
 			(*Tr).close_head = P->close_next;
 		}
-		else if(P == (*Tr).close_end)//找到的节点是尾节点
+		else if(P == (*Tr).close_end)//找到的节点是尾节点   把倒数第二个节点的close_next赋为NULL   close_end 链接到前个结点上 
 		{
 			D->close_next = P->close_next;
 			(*Tr).close_end = D;
 		}
-		else
+		else //      把上个结点的close_next赋为NULL
 		{
 			D->close_next = P->close_next;
 		}
